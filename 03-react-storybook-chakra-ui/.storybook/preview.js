@@ -1,9 +1,6 @@
 import React from "react";
-import { addDecorator } from "@storybook/react";
-import Center from "../src/components/Center/Center";
-
-// Global decorator
-addDecorator((story) => <Center>{story()}</Center>);
+// import { addDecorator } from "@storybook/react";
+import { ThemeProvider, theme, CSSReset, Box } from "@chakra-ui/react";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -20,3 +17,23 @@ export const parameters = {
         : a[1].id.localeCompare(b[1].id, undefined, { numeric: true }),
   },
 };
+
+// Global decorator
+export const decorators = [
+  (Story) => (
+    <ThemeProvider theme={theme}>
+      <CSSReset />
+      <Box m={4}>
+        <Story />
+      </Box>
+    </ThemeProvider>
+  ),
+];
+
+// // Global decorator in an alternative way
+// addDecorator((story) => (
+//   <ThemeProvider theme={theme}>
+//     <CSSReset />
+//     <Box m={4}>{story()}</Box>
+//   </ThemeProvider>
+// ));
