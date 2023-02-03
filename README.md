@@ -27,6 +27,9 @@ npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 
 ```sh
 npx storybook init
+
+npm install @mui/material @emotion/react @emotion/styled
+npm install tss-react
 ```
 
 </details>
