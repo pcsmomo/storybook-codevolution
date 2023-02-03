@@ -13,6 +13,7 @@ import {
   LinearProgress,
   InputProps,
   InputAdornment,
+  Stack,
 } from '@mui/material';
 import { PrecisionManufacturing as OphydIcon } from '@mui/icons-material';
 import { useStyles, StyledTextField } from './OphydTextField.styles';
@@ -184,7 +185,7 @@ const OphydTextField: React.FC<OphydTextFieldProps> = ({
     (limits[0] !== 0 || limits[1] !== 0);
 
   return (
-    <Box className={classes.container}>
+    <Stack className={classes.container}>
       <StyledTextField
         type={type}
         label={label}
@@ -208,7 +209,7 @@ const OphydTextField: React.FC<OphydTextFieldProps> = ({
           </Typography>
         </Box>
       )}
-    </Box>
+    </Stack>
   );
 };
 

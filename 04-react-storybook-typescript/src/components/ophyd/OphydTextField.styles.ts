@@ -15,7 +15,7 @@ interface StyleProps {
 
 export const useStyles = makeStyles<StyleProps>()((theme, { width }) => ({
   container: {
-    display: 'inline-block',
+    // display: 'inline-block',
     width,
   },
   limitsDiv: {
