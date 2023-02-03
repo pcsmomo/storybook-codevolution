@@ -30,6 +30,7 @@ npx storybook init
 
 npm install @mui/material @emotion/react @emotion/styled
 npm install tss-react
+npm install @mui/icons-material
 ```
 
 </details>
