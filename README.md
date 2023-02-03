@@ -9,6 +9,10 @@ Storybook Tutorial by Codevolution
 
 ## 02-react-storybook-custom
 
+```sh
+npx storybook init
+```
+
 [Storybook - sorting stories](https://storybook.js.org/docs/react/writing-stories/naming-components-and-hierarchy#sorting-stories)
 
 ## 03-react-storybook-chakra-ui
@@ -17,6 +21,12 @@ Storybook Tutorial by Codevolution
 
 ```sh
 npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+```
+
+## 04-react-storybook-typescript
+
+```sh
+npx storybook init
 ```
 
 </details>
